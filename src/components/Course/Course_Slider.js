@@ -1,7 +1,10 @@
 import React from "react";
 // Import css files
 import Slider from "react-slick";
-
+// import images
+import course1 from "../../assets/images/gallery/courses1.jpg";
+// import css
+import "./Course_Slider.css";
 export default function Course_Slider() {
   //   setting slick slider
   var settings = {
@@ -55,265 +58,251 @@ export default function Course_Slider() {
         </div>
         <div className="directory-active">
           <Slider {...settings}>
-          
-              <div className="properties pb-20">
-                <div className="properties-card">
-                  <div className="properties-img overlay1">
-                    <a href="#">
-                      <img src="assets/img/gallery/courses1.jpg" alt />
-                    </a>
-                    <div className="img-text">
-                      <span>$118</span>
-                    </div>
+            <div className="properties pb-20 px-2">
+              <div className="properties-card">
+                <div className="properties-img overlay1">
+                  <a href="#">
+                    <img src={course1} alt />
+                  </a>
+                  <div className="img-text">
+                    <span>$118</span>
                   </div>
-                  <div className="properties-caption">
-                    <h3>
-                      <a href="#">
-                        Python for Data Science and Machine Learning
-                      </a>
-                    </h3>
-                    <p>by Mario Speedwagon</p>
-                    <div className="ratting">
-                      <ul>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <span>4.9 (120 Review)</span>
-                        </li>
-                      </ul>
-                    </div>
+                </div>
+                <div className="properties-caption">
+                  <h3>
+                    <a href="#">Python for Data Science and Machine Learning</a>
+                  </h3>
+                  <p>by Mario Speedwagon</p>
+                  <div className="ratting">
+                    <ul>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <span>4.9 (120 Review)</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-        
-          
-              <div className="properties pb-20">
-                <div className="properties-card">
-                  <div className="properties-img overlay1">
-                    <a href="#">
-                      <img src="assets/img/gallery/courses1.jpg" alt />
-                    </a>
-                    <div className="img-text">
-                      <span>$118</span>
-                    </div>
+            </div>
+
+            <div className="properties pb-20 px-2">
+              <div className="properties-card">
+                <div className="properties-img overlay1">
+                  <a href="#">
+                    <img src={course1} alt />
+                  </a>
+                  <div className="img-text">
+                    <span>$118</span>
                   </div>
-                  <div className="properties-caption">
-                    <h3>
-                      <a href="#">
-                        Python for Data Science and Machine Learning
-                      </a>
-                    </h3>
-                    <p>by Mario Speedwagon</p>
-                    <div className="ratting">
-                      <ul>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <span>4.9 (120 Review)</span>
-                        </li>
-                      </ul>
-                    </div>
+                </div>
+                <div className="properties-caption">
+                  <h3>
+                    <a href="#">Python for Data Science and Machine Learning</a>
+                  </h3>
+                  <p>by Mario Speedwagon</p>
+                  <div className="ratting">
+                    <ul>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <span>4.9 (120 Review)</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-            
-              <div className="properties pb-20">
-                <div className="properties-card">
-                  <div className="properties-img overlay1">
-                    <a href="#">
-                      <img src="assets/img/gallery/courses1.jpg" alt />
-                    </a>
-                    <div className="img-text">
-                      <span>$118</span>
-                    </div>
+            </div>
+
+            <div className="properties pb-20 px-2">
+              <div className="properties-card">
+                <div className="properties-img overlay1">
+                  <a href="#">
+                    <img src={course1} alt />
+                  </a>
+                  <div className="img-text">
+                    <span>$118</span>
                   </div>
-                  <div className="properties-caption">
-                    <h3>
-                      <a href="#">
-                        Python for Data Science and Machine Learning
-                      </a>
-                    </h3>
-                    <p>by Mario Speedwagon</p>
-                    <div className="ratting">
-                      <ul>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <span>4.9 (120 Review)</span>
-                        </li>
-                      </ul>
-                    </div>
+                </div>
+                <div className="properties-caption">
+                  <h3>
+                    <a href="#">Python for Data Science and Machine Learning</a>
+                  </h3>
+                  <p>by Mario Speedwagon</p>
+                  <div className="ratting">
+                    <ul>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <span>4.9 (120 Review)</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-            
-              <div className="properties pb-20">
-                <div className="properties-card">
-                  <div className="properties-img overlay1">
-                    <a href="#">
-                      <img src="assets/img/gallery/courses1.jpg" alt />
-                    </a>
-                    <div className="img-text">
-                      <span>$118</span>
-                    </div>
+            </div>
+
+            <div className="properties pb-20 px-2">
+              <div className="properties-card">
+                <div className="properties-img overlay1">
+                  <a href="#">
+                    <img src={course1} alt />
+                  </a>
+                  <div className="img-text">
+                    <span>$118</span>
                   </div>
-                  <div className="properties-caption">
-                    <h3>
-                      <a href="#">
-                        Python for Data Science and Machine Learning
-                      </a>
-                    </h3>
-                    <p>by Mario Speedwagon</p>
-                    <div className="ratting">
-                      <ul>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <span>4.9 (120 Review)</span>
-                        </li>
-                      </ul>
-                    </div>
+                </div>
+                <div className="properties-caption">
+                  <h3>
+                    <a href="#">Python for Data Science and Machine Learning</a>
+                  </h3>
+                  <p>by Mario Speedwagon</p>
+                  <div className="ratting">
+                    <ul>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <span>4.9 (120 Review)</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-           
-              <div className="properties pb-20">
-                <div className="properties-card">
-                  <div className="properties-img overlay1">
-                    <a href="#">
-                      <img src="assets/img/gallery/courses1.jpg" alt />
-                    </a>
-                    <div className="img-text">
-                      <span>$118</span>
-                    </div>
+            </div>
+
+            <div className="properties pb-20 px-2">
+              <div className="properties-card">
+                <div className="properties-img overlay1">
+                  <a href="#">
+                    <img src={course1} alt />
+                  </a>
+                  <div className="img-text">
+                    <span>$118</span>
                   </div>
-                  <div className="properties-caption">
-                    <h3>
-                      <a href="#">
-                        Python for Data Science and Machine Learning
-                      </a>
-                    </h3>
-                    <p>by Mario Speedwagon</p>
-                    <div className="ratting">
-                      <ul>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <span>4.9 (120 Review)</span>
-                        </li>
-                      </ul>
-                    </div>
+                </div>
+                <div className="properties-caption">
+                  <h3>
+                    <a href="#">Python for Data Science and Machine Learning</a>
+                  </h3>
+                  <p>by Mario Speedwagon</p>
+                  <div className="ratting">
+                    <ul>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <span>4.9 (120 Review)</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-           
-              <div className="properties pb-20">
-                <div className="properties-card">
-                  <div className="properties-img overlay1">
-                    <a href="#">
-                      <img src="assets/img/gallery/courses1.jpg" alt />
-                    </a>
-                    <div className="img-text">
-                      <span>$118</span>
-                    </div>
+            </div>
+
+            <div className="properties pb-20 px-2">
+              <div className="properties-card">
+                <div className="properties-img overlay1">
+                  <a href="#">
+                    <img src={course1} alt />
+                  </a>
+                  <div className="img-text">
+                    <span>$118</span>
                   </div>
-                  <div className="properties-caption">
-                    <h3>
-                      <a href="#">
-                        Python for Data Science and Machine Learning
-                      </a>
-                    </h3>
-                    <p>by Mario Speedwagon</p>
-                    <div className="ratting">
-                      <ul>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <span>4.9 (120 Review)</span>
-                        </li>
-                      </ul>
-                    </div>
+                </div>
+                <div className="properties-caption">
+                  <h3>
+                    <a href="#">Python for Data Science and Machine Learning</a>
+                  </h3>
+                  <p>by Mario Speedwagon</p>
+                  <div className="ratting">
+                    <ul>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <span>4.9 (120 Review)</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
+            </div>
           </Slider>
         </div>
       </div>
