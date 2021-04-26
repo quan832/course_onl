@@ -1,0 +1,154 @@
+.udlite-text-sm {
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.headline__main-text {
+  max-width: 800px;
+}
+
+.udlite-heading-xl {
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 24px;
+}
+.udlite-heading-xxl {
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 40px;
+}
+.udlite-text-input {
+  border-radius: 4px;
+  border: 1px solid #989586;
+  display: block;
+  /* padding: 0 1.6rem; */
+  width: 100%;
+}
+.headline__sub-text {
+  color: #73726c;
+  margin-top: 0.5rem;
+  max-width: 800px;
+}
+.udlite-heading-md {
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 16px;
+}
+.udlite-btn-ghost,
+.udlite-btn-ghost.udlite-btn-disabled,
+.udlite-btn-link,
+.udlite-btn-link.udlite-btn-disabled {
+  color: #0f7c90;
+  background-color: transparent;
+  min-width: auto;
+  padding: 0;
+}
+.udlite-btn-medium {
+  height: 4rem;
+}
+.udlite-btn {
+  position: relative;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+
+  padding: 0 1.2rem;
+  justify-content: center;
+  user-select: none;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+.udlite-heading-sm {
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 14px;
+}
+.udlite-heading-xs {
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 12px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.fx-jsb,
+.fxjsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fx-wrap,
+.fxwrap {
+  flex-wrap: wrap;
+}
+.udlite-btn-secondary,
+.udlite-btn-secondary.udlite-btn-disabled {
+  color: #0f7c90;
+  background-color: transparent;
+  border: 1px solid #2896a9;
+}
+.udlite-btn-round {
+  border-radius: 9999px;
+  min-width: 4rem;
+}
+.udlite-btn-large {
+  height: 48px;
+}
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1169px) {
+}
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .udlite-heading-xxl {
+    font-size: 32px;
+  }
+  .udlite-text-md {
+    font-size: 16px;
+  }
+  .form-inline-what {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .form-inline {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* small mobile :320px. */
+
+@media (max-width: 767px) {
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}

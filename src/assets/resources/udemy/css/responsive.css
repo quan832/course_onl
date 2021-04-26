@@ -1,0 +1,170 @@
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1169px) {
+}
+
+/* Tablet desktop :768px. */
+
+@media screen and (max-width: 992px) {
+  .carousel-tab {
+    grid-gap: 0rem;
+  }
+  nav {
+    text-align: center;
+  }
+  a.nav-link {
+    margin-bottom: 10px;
+  }
+  .card-deck .card:last-child {
+    display: none;
+  }
+  .container {
+    max-width: 900px;
+  }
+  .jumbotron {
+    max-width: 100%;
+  }
+  .keep-going {
+    left: -1.2rem;
+    top: -6.6rem;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  .non-student-cta-image {
+    height: 350px;
+    width: 350px;
+  }
+  .non-student-cta {
+    margin-right: 0;
+  }
+  .onboarding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* .shopping-checkout{
+    padding:10px;
+} */
+.shopping-pane-list {
+    margin-right: 0px;
+}
+/* .shopping_card_text{
+    font-size: 36px;
+} */
+}
+
+/* small mobile :320px. */
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 767px;
+  }
+  .carousel--scroll-item {
+    display: none;
+  }
+  .card-deck .card:nth-child(3) {
+    display: none;
+  }
+  .trending-topics--topic {
+    height: 5.4rem;
+  }
+  .trending-topics--category:first-child {
+    display: none;
+  }
+  .udlite-heading-xxl {
+    font-size: 28px;
+  }
+  .featured-topic .row .col:last-child {
+    display: none;
+  }
+  .featured-topic {
+    margin-top: 50px !important;
+  }
+  .featured-topic .col-8 {
+    /* flex: 0 0 66.666667%; */
+    max-width: 76.666667%;
+  }
+  .partners__logos-container {
+    flex-wrap: nowrap;
+  }
+  .partners {
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  .container-fluid .col:nth-child(2),
+  .container-fluid .col:nth-child(3) {
+    display: none;
+  }
+  .shopping-container {
+    display: block;
+  }
+  .jumbotron-inner {
+    padding:10px;
+}
+.shopping-card{
+    padding-right: 0px;
+}
+
+
+
+}
+/* Large Mobile :480px. */
+
+@media screen and (max-width: 576px) {
+  .keep-going {
+    display: none;
+  }
+  .carousel-tab div:nth-child(2) {
+    display: none;
+  }
+  .carousel-tab div:nth-child(3) {
+    display: none;
+  }
+  .skills-hub {
+    display: none;
+  }
+  .top-categories {
+    display: none;
+  }
+  .categories-mobile {
+    display: block;
+    margin: -0.8rem 0 0 -0.8rem;
+  }
+  .trending-topics--category {
+    width: 50%;
+  }
+  .featured-topic .col-8 {
+    /* flex: 0 0 66.666667%; */
+    max-width: 84.666667%;
+  }
+  .non-student-content-wrapper img {
+    display: none;
+  }
+  .big-banner {
+    height: 300px;
+  }
+  .form-inline {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .pill-group--pill-group--2bay- > * {
+    margin: 8px 0 0 8px;
+  }
+  .form-inline .btn{
+      margin-top: 0!important;
+      margin-bottom: 0!important;
+  }
+  .shopping_card_action{
+      display:none;
+  }
+  .number_item{
+    flex: 1 0 50%;
+  }
+  .number_header{
+      font-size: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+    .carousel-tab div:nth-child(4) {
+        display: none;
+      }
+}
