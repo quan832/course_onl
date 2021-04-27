@@ -3,11 +3,14 @@ import React from "react";
 import h1_her1 from "../../assets/images/hero/h1_hero1.jpg";
 import hero_shape from "../../assets/images/hero/hero-shape.jpg";
 
-import "./Carousel.css"
+import "./Carousel.css";
 export default function Carousel() {
   return (
     <div>
-      <div className="slider-area slider-height container" style={{backgroundImage: `url(${hero_shape})`}}>
+      <div
+        className="slider-area slider-height container"
+        style={{ backgroundImage: `url(${hero_shape})` }}
+      >
         <div className="slider-active">
           <div className="single-slider">
             <div className="slider-cap-wrapper pt-5">
@@ -26,14 +29,12 @@ export default function Carousel() {
                       placeholder="What do you want to learn?"
                     />
                     <a className="search-form" href="#">
-                      <i className="ti-search" />
+                      <i className=" fa fa-search" />
                     </a>
                   </div>
                 </form>
               </div>
-              <div className="hero-img position-relative">
-               
-              </div>
+              <div className="hero-img position-relative"></div>
             </div>
           </div>
         </div>
@@ -74,6 +75,6 @@ export default function Carousel() {
         </div>
       </div>
       */}
-    </div> 
+    </div>
   );
 }
