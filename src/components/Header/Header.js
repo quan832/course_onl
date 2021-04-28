@@ -1,9 +1,16 @@
 import React from "react";
 import logo from "../../assets/images/logo/logo.png";
-import "./Header.css";
+// router
+import { NavLink } from "react-router-dom";
+
 export default function Header() {
   return (
-    <header>
+    <header
+      style={{
+        boxShadow: "0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%)",
+        zIndex: 1010,
+      }}
+    >
       <div className="header-area">
         <div className="main-header header-sticky">
           <div className="container-fluid">
@@ -32,7 +39,7 @@ export default function Header() {
                       <a href="index.html">Home</a>
                     </li>
                     <li>
-                      <a href="courses.html">Browse Courses</a>
+                      <NavLink to="/admin">Admin</NavLink>
                     </li>
                     <li>
                       <a href="about.html">About</a>

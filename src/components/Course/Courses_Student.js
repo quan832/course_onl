@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getCourses } from "../../redux/actions/action";
 
 // css
-import "./Course_Slider.css";
+import "./Course_Slider.scss";
 export default function Courses_Student(props) {
   // get reducer
   const studentCourses = useSelector((state) => {

@@ -12,7 +12,7 @@ export default function HomeTemplate(props) {
       {...restRoute}
       render={(propsRoute) => {
         return (
-          <div>
+          <div className="HomeTemplate">
             {/* Header */}
             <Header />
             <Component {...propsRoute} />

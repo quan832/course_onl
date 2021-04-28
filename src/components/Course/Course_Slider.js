@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 // import css
-import "./Course_Slider.css";
+import "./Course_Slider.scss";
 // setting
 import settings from "../../config/js/setting";
 // redux

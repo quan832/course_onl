@@ -3,7 +3,7 @@ import React from "react";
 import h1_her1 from "../../assets/images/hero/h1_hero1.jpg";
 import hero_shape from "../../assets/images/hero/hero-shape.jpg";
 
-import "./Carousel.css";
+import "./Carousel.scss";
 export default function Carousel() {
   return (
     <div>
