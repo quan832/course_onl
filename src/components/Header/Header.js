@@ -17,9 +17,9 @@ export default function Header() {
             <div className="menu-wrapper d-flex align-items-center justify-content-between">
               <div className="left-content d-flex align-items-center">
                 <div className="logo">
-                  <a href="index.html">
+                  <NavLink to="/">
                     <img src={logo} alt="" />
-                  </a>
+                  </NavLink>
                 </div>
                 <form action="#" className="form-box">
                   <input
@@ -67,9 +67,9 @@ export default function Header() {
                       </a>
                     </li>
                     <li>
-                      <a href="login.html" className="btn header-btn2">
+                      <NavLink to="/login" className="btn header-btn2">
                         Sign In
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </nav>

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import light from "../assets/img/brand/light.svg";
 import profile3 from "../assets/img/team/profile-picture-3.jpg";
 export default function SideBar() {
@@ -45,28 +46,28 @@ export default function SideBar() {
         </div>
         <ul className="nav flex-column">
           <li className="nav-item active">
-            <a href="../../pages/dashboard/dashboard.html" className="nav-link">
+            <NavLink to="/overview" className="nav-link">
               <span className="sidebar-icon">
                 <span className="fa fa-chart-pie" />
               </span>
               <span>Overview</span>
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a href="../../pages/transactions.html" className="nav-link">
+            <NavLink to="/coursesAdmin" className="nav-link">
               <span className="sidebar-icon">
                 <span className="fa fa-hand-holding-usd" />
               </span>
               <span>Courses</span>
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a href="../../pages/settings.html" className="nav-link">
+            <NavLink to="/settings" className="nav-link">
               <span className="sidebar-icon">
                 <span className="fa fa-cog" />
               </span>
               <span>Settings</span>
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
             <span
@@ -92,10 +93,7 @@ export default function SideBar() {
             >
               <ul className="flex-column nav">
                 <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="../../pages/tables/bootstrap-tables.html"
-                  >
+                  <a className="nav-link" href="#">
                     <span>Bootstrap Tables</span>
                   </a>
                 </li>

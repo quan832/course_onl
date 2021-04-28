@@ -25,13 +25,14 @@ export default function Footer() {
                     </div>
                     <div className="footer-social">
                       <a href="#">
-                        <i className="fa fa-twitter" />
+                        <i className="fab fa-twitter" />
+                        
                       </a>
                       <a href="https://bit.ly/sai4ull">
-                        <i className="fa fa-facebook-f" />
+                        <i className="fab fa-facebook-f" />
                       </a>
                       <a href="#">
-                        <i className="fa fa-pinterest-p" />
+                        <i className="fab fa-pinterest-p" />
                       </a>
                     </div>
                   </div>
@@ -156,12 +157,12 @@ export default function Footer() {
                     <div className="footer-copy-right text-center">
                       <p>
                         Copyright © All rights reserved | This template is made
-                        with{" "}
+                        with
                         <i
                           className="fa fa-heart color-danger"
                           aria-hidden="true"
-                        />{" "}
-                        by{" "}
+                        />
+                        by
                         <a
                           href="https://colorlib.com"
                           target="_blank"

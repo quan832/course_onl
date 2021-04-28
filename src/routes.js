@@ -1,9 +1,13 @@
 // import pages
 
 // admin
-// home
+import CoursesAdmin from "./Admin/Pages/CoursesAdmin";
+import Settings from "./Admin/Pages/Settings";
 import HomePage from "./Admin/Pages/HomePage";
+// home
+
 import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login";
 
 const routesHome = [
   {
@@ -11,6 +15,7 @@ const routesHome = [
     exact: true,
     component: Home,
   },
+  { path: "/login", exact: true, component: Login },
 ];
 
 const routesAdmin = [
@@ -19,6 +24,8 @@ const routesAdmin = [
     exact: true,
     component: HomePage,
   },
+  { path: "/settings", exact: true, component: Settings },
+  { path: "/coursesAdmin", exact: true, component: CoursesAdmin },
 ];
 
 export { routesHome, routesAdmin };
