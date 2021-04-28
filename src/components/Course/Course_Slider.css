@@ -60,3 +60,8 @@
 
   object-fit: cover;
 }
+
+/* slick slider */
+.slick-track {
+  margin-left: 0;
+}

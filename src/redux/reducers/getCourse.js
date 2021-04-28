@@ -1,13 +1,8 @@
-import {
-  GET_COURSES,
-  GET_COURSES_TITLE,
-  GET_TITLE_COURSES,
-} from "../constants/types";
+import { GET_COURSES, GET_TITLE_COURSES } from "../constants/types";
 
 const stateDefault = {
   result: {},
   title: {},
-  courses_title: {},
 };
 
 const getCourses = (state = stateDefault, action) => {
@@ -20,12 +15,6 @@ const getCourses = (state = stateDefault, action) => {
     case GET_TITLE_COURSES:
       state.title = action.payload;
 
-      return { ...state };
-
-    case GET_COURSES_TITLE:
-      state.courses_title = action.payload;
-
-      console.log(state);
       return { ...state };
 
     default:

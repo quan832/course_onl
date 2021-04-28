@@ -21,7 +21,7 @@ export default function Header() {
                     placeholder="Search courses.."
                   />
                   <div className="search-icon">
-                    <i class="fa fa-search"></i>
+                    <i className="fa fa-search"></i>
                   </div>
                 </form>
               </div>

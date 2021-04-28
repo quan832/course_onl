@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 // import css
 import "./Course_Slider.css";
@@ -25,19 +25,22 @@ export default function Course_Slider() {
 
   // console.log(titleCourse);
 
+  const [active, setActive] = useState(0);
+
   // render title
   const renderTitle = () => {
     return titleCourse?.map((title, index) => {
       return (
-        <li class="nav-item">
+        <li class="nav-item" key={index}>
           <a
-            class="nav-link"
+            class={`nav-link ${index === 0 ? "active" : ""}`}
             id="profile-tab"
             data-toggle="tab"
             href={"#" + title.maDanhMuc}
             role="tab"
             aria-controls="profile"
             aria-selected="false"
+            onClick={() => setActive(index)}
           >
             <div data-index={1}>
               <div className="nav-btn">
@@ -60,38 +63,38 @@ export default function Course_Slider() {
   // render noi dung theo title
   const render_Courses_Title = () => {
     return titleCourse?.map((title, index) => {
-     
-   
-      if (index == 0) {
+      if (index == active) {
         return (
           <div
-            class="tab-pane fade show active "
+            class="tab-pane fade show active"
             id={title.maDanhMuc}
             role="tabpanel"
             aria-labelledby="home-tab"
             key={index}
           >
             <Render_Slider
-              title={title.maDanhMuc}
               index={index}
+              title={title.maDanhMuc}
             ></Render_Slider>
           </div>
         );
       } else {
-        return (
-          <div
-            class="tab-pane fade "
-            id={title.maDanhMuc}
-            role="tabpanel"
-            aria-labelledby="home-tab"
-            key={index}
-          >
-            <Render_Slider
-              title={title.maDanhMuc}
-              index={index}
-            ></Render_Slider>
-          </div>
-        );
+        return null;
+        // return (
+        //   <div
+        //     class="tab-pane fade "
+        //     id={title.maDanhMuc}
+        //     role="tabpanel"
+        //     aria-labelledby="home-tab"
+        //     key={index}
+        //   >
+        //     <div>...</div>
+        //     <Render_Slider
+        //       title={title.maDanhMuc}
+        //       index={index}
+        //     ></Render_Slider>
+        //   </div>
+        // );
       }
     });
   };

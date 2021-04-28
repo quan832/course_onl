@@ -29,7 +29,7 @@ export default function Courses_Student(props) {
   const renderCourseStudent = () => {
     return studentCourses.data?.map((course, index) => {
       return (
-        <Fragment>
+        <Fragment key={index}>
           <div className="properties pb-20 px-2">
             <div className="properties-card">
               <div className="properties-img overlay1">

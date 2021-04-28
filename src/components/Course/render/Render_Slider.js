@@ -8,25 +8,38 @@ import settings from "../../../config/js/setting";
 // Import css files
 import Slider from "react-slick";
 
+import { createSelector } from "reselect";
+
 export default function Render_Slider(props) {
-  // redux
-  const coursesTitle = useSelector((state) => {
-    console.log(state.getCoursesReducer.courses_title.data);
-    return state.getCoursesReducer.courses_title.data;
-  });
+  // // redux
+  // const coursesTitle = useSelector((state) => {
+  //   console.log(state.getCoursesReducer.courses_title);
+  //   return state.getCoursesReducer.courses_title;
+  // });
+
+  const coursesCreateSelector = createSelector(
+    (state) => state.getCoursesTitleReducer.courses_title.data,
+    (coursesTitle) => coursesTitle
+  );
 
   const dispatch = useDispatch();
 
+  const coursesTitle = useSelector(coursesCreateSelector);
+
+  let { title } = props;
+
+  // console.log(title);
   // goi api
   useEffect(() => {
-    console.log(props.title);
-    dispatch(getCoursesTitle(props.title));
+    // debugger;
+    dispatch(getCoursesTitle(title));
   }, []);
+
 
   const renderCourses_Slider = () => {
     return coursesTitle?.map((course, index) => {
       return (
-        <Fragment>
+        <Fragment key={index}>
           <div className="properties pb-20 px-2">
             <div className="properties-card">
               <div className="properties-img overlay1">
@@ -35,12 +48,11 @@ export default function Render_Slider(props) {
                 </a>
               </div>
               <div className="properties-caption">
-                <h3>{/* <a href="#">{course["tenKhoaHoc"]}</a> */}</h3>
+                <h3>
+                  <a href="#">{course["tenKhoaHoc"]}</a>
+                </h3>
                 <p>
-                  by
-                  {/* {course.nguoiTao.hoTen
-                        ? course.nguoiTao.hoTen
-                        : "Default"} */}
+                  by {course.nguoiTao.hoTen ? course.nguoiTao.hoTen : "Default"}
                 </p>
                 <div className="ratting">
                   <ul>
@@ -59,7 +71,9 @@ export default function Render_Slider(props) {
                     <li>
                       <i class="fa fa-star" aria-hidden="true"></i>
                     </li>
-                    <li>{/* <span>4.9 ({course.luotXem} Review)</span> */}</li>
+                    <li>
+                      <span>4.9 ({course.luotXem} Review)</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -70,6 +84,7 @@ export default function Render_Slider(props) {
     });
   };
 
-  //   return <Slider {...settings}>{renderCourses_Slider()}</Slider>;
-  return <div>{props.title}</div>;
+  return <Slider {...settings}>{renderCourses_Slider()}</Slider>;
+  // return <div>{props.title}</div>;
+  // return <div>{props.title}</div>;
 }
